@@ -31,7 +31,7 @@
       .specials {
         .specials_poster {
           position: relative;
-          height: 560px;
+          height: 740px;
           width: 50%;
 
           img {
@@ -45,27 +45,33 @@
           }
         }
 
-        .content_container {
-          width: 60%;
-        }
+        .specials_content {
+          width: 50%;
 
-        h2 {
-          margin-bottom: 10px;
-        }
-
-        p.big_p {
-          margin-bottom: 20px;
-        }
-
-        .specials_row {
-          span {
-            margin-right: 10px;
-            font-size: 25px;
-            color: #ab4027;
+          .content_container {
+            width: 60%;
           }
 
-          p {
+          h2 {
             margin-bottom: 10px;
+          }
+
+          p.big_p {
+            margin-bottom: 30px;
+          }
+
+          .specials_row {
+            margin-bottom: 30px;
+
+            span {
+              margin-right: 10px;
+              font-size: 25px;
+              color: #ab4027;
+            }
+
+            p {
+              margin-bottom: 10px;
+            }
           }
         }
       }
@@ -121,7 +127,7 @@
 
             .guy_hover {
               @include fullSize;
-              background-color: #d2401e;
+              background-color: $spanRed;
 
               h3 {
                 font-size: 25px;
@@ -145,17 +151,143 @@
       }
 
       .partners {
-          height: 315px;
-          width: 100%;
-          padding: 90px 140px;
-          background: #f7f7f2;
+        height: 315px;
+        width: 100%;
+        padding: 90px 140px;
+        background: #f7f7f2;
 
-          .partner {
-              height: 260px;
-              width: 20%;
-              --animation-duration: 3s;
-          }
+        .partner {
+          height: 260px;
+          width: 20%;
+          --animation-duration: 3s;
+        }
       }
     } //fine third
+
+    #fourth {
+      margin-top: 80px;
+
+      .pizza_flavors {
+        width: 100%;
+        .choose {
+          width: 675px;
+          text-align: center;
+          span {
+            color: $spanRed;
+            font-size: $tSmall;
+            margin-bottom: 15px;
+          }
+
+          h2 {
+            font-size: 40px;
+            color: $mainP;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .flavors_slider {
+        height: 340px;
+        width: 100%;
+
+        img {
+          height: 180px;
+          width: 180px;
+        }
+
+        h4 {
+          font-size: 20px;
+          color: #b7903c;
+        }
+
+        span {
+          font-size: 20px;
+          color: $spanRed;
+        }
+
+        span.original_price {
+          margin-right: 10px;
+          color: #b7903c;
+          text-decoration: line-through;
+          opacity: 0.5;
+        }
+
+        span.circle {
+          height: 65px;
+          width: 65px;
+          top: 15px;
+          font-size: 14px;
+          color: white;
+          border-radius: 50%;
+        }
+
+        span.sale {
+          background-color: #ffa323;
+          left: 15px;
+        }
+
+        span.sold {
+          background-color: #d2401e;
+          right: 15px;
+        }
+      }
+    } //fine fourth
+
+    #fifth {
+      margin-top: 80px;
+
+      .events {
+        height: 844px;
+        width: 50%;
+        background-image: url(img/bg.png);
+
+        .delish {
+          span {
+            font-size: $tSmall;
+            color: #d2401e;
+            margin-bottom: 15px;
+          }
+
+          h2 {
+            font-size: 40px;
+            color: #ffffff;
+          }
+        }
+
+        .event {
+          height: 200px;
+          width: 540px;
+
+          .date span {
+            font-size: 55px;
+            color: #ab4027;
+          }
+
+          .date span:last-of-type {
+            font-size: 25px;
+            color: #ffffff;
+          }
+
+          .event_name {
+            margin-left: 40px;
+
+            h3 {
+              font-size: 25px;
+              color: #ffffff;
+            }
+
+            address {
+              margin-top: 5px;
+              font-size: $tSmall;
+              color: $spanRed;
+            }
+          }
+        }
+      }
+
+      .comic img {
+        @include fullSize;
+      }
+    } //fine fifth
   } //fine main
 } //fine homepage

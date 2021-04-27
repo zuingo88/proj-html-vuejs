@@ -71,7 +71,7 @@
 }
 #homepage main #second .specials .specials_poster {
   position: relative;
-  height: 560px;
+  height: 740px;
   width: 50%;
 }
 #homepage main #second .specials .specials_poster img {
@@ -83,21 +83,27 @@
   height: 65%;
   width: 65%;
 }
-#homepage main #second .specials .content_container {
+#homepage main #second .specials .specials_content {
+  width: 50%;
+}
+#homepage main #second .specials .specials_content .content_container {
   width: 60%;
 }
-#homepage main #second .specials h2 {
+#homepage main #second .specials .specials_content h2 {
   margin-bottom: 10px;
 }
-#homepage main #second .specials p.big_p {
-  margin-bottom: 20px;
+#homepage main #second .specials .specials_content p.big_p {
+  margin-bottom: 30px;
 }
-#homepage main #second .specials .specials_row span {
+#homepage main #second .specials .specials_content .specials_row {
+  margin-bottom: 30px;
+}
+#homepage main #second .specials .specials_content .specials_row span {
   margin-right: 10px;
   font-size: 25px;
   color: #ab4027;
 }
-#homepage main #second .specials .specials_row p {
+#homepage main #second .specials .specials_content .specials_row p {
   margin-bottom: 10px;
 }
 #homepage main #third .scroll_image {
@@ -176,6 +182,109 @@
   width: 20%;
   --animation-duration: 3s;
 }
+#homepage main #fourth {
+  margin-top: 80px;
+}
+#homepage main #fourth .pizza_flavors {
+  width: 100%;
+}
+#homepage main #fourth .pizza_flavors .choose {
+  width: 675px;
+  text-align: center;
+}
+#homepage main #fourth .pizza_flavors .choose span {
+  color: #d2401e;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+#homepage main #fourth .pizza_flavors .choose h2 {
+  font-size: 40px;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+}
+#homepage main #fourth .flavors_slider {
+  height: 340px;
+  width: 100%;
+}
+#homepage main #fourth .flavors_slider img {
+  height: 180px;
+  width: 180px;
+}
+#homepage main #fourth .flavors_slider h4 {
+  font-size: 20px;
+  color: #b7903c;
+}
+#homepage main #fourth .flavors_slider span {
+  font-size: 20px;
+  color: #d2401e;
+}
+#homepage main #fourth .flavors_slider span.original_price {
+  margin-right: 10px;
+  color: #b7903c;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+#homepage main #fourth .flavors_slider span.circle {
+  height: 65px;
+  width: 65px;
+  top: 15px;
+  font-size: 14px;
+  color: white;
+  border-radius: 50%;
+}
+#homepage main #fourth .flavors_slider span.sale {
+  background-color: #ffa323;
+  left: 15px;
+}
+#homepage main #fourth .flavors_slider span.sold {
+  background-color: #d2401e;
+  right: 15px;
+}
+#homepage main #fifth {
+  margin-top: 80px;
+}
+#homepage main #fifth .events {
+  height: 844px;
+  width: 50%;
+  background-image: url(img/bg.png);
+}
+#homepage main #fifth .events .delish span {
+  font-size: 12px;
+  color: #d2401e;
+  margin-bottom: 15px;
+}
+#homepage main #fifth .events .delish h2 {
+  font-size: 40px;
+  color: #ffffff;
+}
+#homepage main #fifth .events .event {
+  height: 200px;
+  width: 540px;
+}
+#homepage main #fifth .events .event .date span {
+  font-size: 55px;
+  color: #ab4027;
+}
+#homepage main #fifth .events .event .date span:last-of-type {
+  font-size: 25px;
+  color: #ffffff;
+}
+#homepage main #fifth .events .event .event_name {
+  margin-left: 40px;
+}
+#homepage main #fifth .events .event .event_name h3 {
+  font-size: 25px;
+  color: #ffffff;
+}
+#homepage main #fifth .events .event .event_name address {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #d2401e;
+}
+#homepage main #fifth .comic img {
+  height: 100%;
+  width: 100%;
+}
 
 * {
   margin: 0;
@@ -214,4 +323,16 @@ p {
 p.big_p {
   font-size: 18px;
   color: #767676;
+}
+
+ul li {
+  list-style: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
 }
