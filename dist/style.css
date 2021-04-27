@@ -1,3 +1,217 @@
-body {
-  background-color: yellow;
+/* regole flex */
+.flex {
+  display: flex;
+}
+
+.flex_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_col_rev {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.just_start {
+  justify-content: flex-start;
+}
+
+.just_cen {
+  justify-content: center;
+}
+
+.just_end {
+  justify-content: flex-end;
+}
+
+.space_bet {
+  justify-content: space-between;
+}
+
+.align_cen {
+  align-items: center;
+}
+
+#homepage main #first .images {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+#homepage main #first .images .image {
+  position: relative;
+  width: 24%;
+  height: 210px;
+}
+#homepage main #first .images .image:hover img.image_hover {
+  display: block;
+}
+#homepage main #first .images .image img {
+  height: 100%;
+  width: 100%;
+}
+#homepage main #first .images .image img.image_hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+#homepage main #second .specials .specials_poster {
+  position: relative;
+  height: 560px;
+  width: 50%;
+}
+#homepage main #second .specials .specials_poster img {
+  height: 100%;
+  width: 100%;
+}
+#homepage main #second .specials .specials_poster img:last-child {
+  position: absolute;
+  height: 65%;
+  width: 65%;
+}
+#homepage main #second .specials .content_container {
+  width: 60%;
+}
+#homepage main #second .specials h2 {
+  margin-bottom: 10px;
+}
+#homepage main #second .specials p.big_p {
+  margin-bottom: 20px;
+}
+#homepage main #second .specials .specials_row span {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #ab4027;
+}
+#homepage main #second .specials .specials_row p {
+  margin-bottom: 10px;
+}
+#homepage main #third .scroll_image {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#homepage main #third .scroll_image .scroll_bg {
+  height: 100%;
+  width: 100%;
+  background: url(img/h3-background-img.jpg);
+  background-position: center;
+}
+#homepage main #third .scroll_image .scroll_title {
+  width: 450px;
+  margin-left: 300px;
+}
+#homepage main #third .scroll_image .scroll_title h2 {
+  font-size: 70px;
+  line-height: 75px;
+  color: #ffffff;
+}
+#homepage main #third .guys {
+  height: 395px;
+  width: 100%;
+}
+#homepage main #third .guys .guy {
+  position: relative;
+  width: 25%;
+}
+#homepage main #third .guys .guy:hover .guy_hover_bg {
+  display: block;
+}
+#homepage main #third .guys .guy img {
+  height: 100%;
+  width: 100%;
+}
+#homepage main #third .guys .guy .guy_hover_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  background-image: url(img/hover.png);
+  display: none;
+}
+#homepage main #third .guys .guy .guy_hover_bg .guy_hover {
+  height: 100%;
+  width: 100%;
+  background-color: #d2401e;
+}
+#homepage main #third .guys .guy .guy_hover_bg .guy_hover h3 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
+}
+#homepage main #third .guys .guy .guy_hover_bg .guy_hover p {
+  font-size: 12px;
+  color: white;
+  margin-bottom: 5px;
+}
+#homepage main #third .guys .guy .guy_hover_bg .guy_hover span {
+  margin: 10px;
+  color: white;
+}
+#homepage main #third .partners {
+  height: 315px;
+  width: 100%;
+  padding: 90px 140px;
+  background: #f7f7f2;
+}
+#homepage main #third .partners .partner {
+  height: 260px;
+  width: 20%;
+  --animation-duration: 3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+section {
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+span {
+  font-weight: 500;
+  color: #303030;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #5a5a5a;
+}
+
+p.big_p {
+  font-size: 18px;
+  color: #767676;
 }

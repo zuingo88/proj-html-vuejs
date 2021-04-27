@@ -1,0 +1,161 @@
+#homepage {
+  main {
+    #first {
+      .images {
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+
+        .image {
+          position: relative;
+          width: 24%;
+          height: 210px;
+
+          &:hover img.image_hover {
+            display: block;
+          }
+
+          img {
+            @include fullSize;
+          }
+
+          img.image_hover {
+            @include fullAbs;
+            display: none;
+          }
+        }
+      }
+    } //fine first
+
+    #second {
+      .specials {
+        .specials_poster {
+          position: relative;
+          height: 560px;
+          width: 50%;
+
+          img {
+            @include fullSize;
+          }
+
+          img:last-child {
+            position: absolute;
+            height: 65%;
+            width: 65%;
+          }
+        }
+
+        .content_container {
+          width: 60%;
+        }
+
+        h2 {
+          margin-bottom: 10px;
+        }
+
+        p.big_p {
+          margin-bottom: 20px;
+        }
+
+        .specials_row {
+          span {
+            margin-right: 10px;
+            font-size: 25px;
+            color: #ab4027;
+          }
+
+          p {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    } //fine second
+
+    #third {
+      .scroll_image {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .scroll_bg {
+          @include fullSize;
+          background: url(img/h3-background-img.jpg);
+          background-position: center;
+        }
+
+        .scroll_title {
+          width: 450px;
+          margin-left: 300px;
+
+          h2 {
+            font-size: 70px;
+            line-height: 75px;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .guys {
+        height: 395px;
+        width: 100%;
+        //padding: 10px 0;
+
+        .guy {
+          position: relative;
+          width: 25%;
+
+          &:hover .guy_hover_bg {
+            display: block;
+          }
+
+          img {
+            @include fullSize;
+          }
+
+          .guy_hover_bg {
+            @include fullAbs;
+            padding: 25px;
+            background-image: url(img/hover.png);
+            display: none;
+
+            .guy_hover {
+              @include fullSize;
+              background-color: #d2401e;
+
+              h3 {
+                font-size: 25px;
+                color: white;
+                margin-bottom: 10px;
+              }
+
+              p {
+                font-size: $tSmall;
+                color: white;
+                margin-bottom: 5px;
+              }
+
+              span {
+                margin: 10px;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+
+      .partners {
+          height: 315px;
+          width: 100%;
+          padding: 90px 140px;
+          background: #f7f7f2;
+
+          .partner {
+              height: 260px;
+              width: 20%;
+              --animation-duration: 3s;
+          }
+      }
+    } //fine third
+  } //fine main
+} //fine homepage

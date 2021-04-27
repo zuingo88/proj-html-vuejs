@@ -1,3 +1,44 @@
-body {
-    background-color: yellow;
+@import "partials/variables.scss";
+@import "partials/flex.scss";
+@import "partials/header.scss";
+@import "partials/main.scss";
+@import "partials/footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+span {
+    font-weight: 500;
+  color: $mainTitles;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: $mainP;
+}
+
+p.big_p {
+  font-size: 18px;
+  color: #767676;
 }

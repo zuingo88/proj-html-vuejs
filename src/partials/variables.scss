@@ -1,0 +1,17 @@
+$mainTitles: #303030;
+$mainP: #5a5a5a;
+$tSmall: 12px;
+// $pBig: 18px;
+
+@mixin fullSize {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin fullAbs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

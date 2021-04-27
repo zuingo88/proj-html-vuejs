@@ -1,18 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
     <title>zuingo88 - pizza</title>
 
     <!-- my script -->
     <script src="app.js"></script>
-
     <!-- my style -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <p>weeee carissimo</p>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="homepage">
+        <header></header>
+
+        <main>
+          <!-- first -->
+          <section id="first">
+            <!-- images -->
+            <div class="images flex space_bet">
+              <div class="image">
+                <img src="img/h3-img-1.jpg" alt="" />
+                <img
+                  class="image_hover animate__animated animate__fadeIn"
+                  src="img/hover.png"
+                  alt=""
+                />
+              </div>
+              <div class="image">
+                <img src="img/h3-img-2.jpg" alt="" />
+                <img
+                  class="image_hover animate__animated animate__fadeIn"
+                  src="img/hover.png"
+                  alt=""
+                />
+              </div>
+              <div class="image">
+                <img src="img/h3-img-3.jpg" alt="" />
+                <img
+                  class="image_hover animate__animated animate__fadeIn"
+                  src="img/hover.png"
+                  alt=""
+                />
+              </div>
+              <div class="image">
+                <img src="img/h3-img-4.jpg" alt="" />
+                <img
+                  class="image_hover animate__animated animate__fadeIn"
+                  src="img/hover.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <!-- carousel -->
+            <div class="carousel">CAROSELLO</div>
+          </section>
+
+          <!-- second -->
+          <section id="second">
+            <div class="specials flex">
+              <!-- poster -->
+              <div class="specials_poster flex_center">
+                <img src="img/h1-img-4.jpg" alt="" />
+                <img src="img/h1-img-7n.png" alt="" />
+              </div>
+
+              <!-- content -->
+              <div class="specials_content flex_center">
+                <div class="content_container">
+                  <h2>specials*</h2>
+                  <p class="big_p">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Explicabo, consectetur libero.
+                  </p>
+                  <div class="specials_row flex">
+                    <span>$10</span>
+                    <div class="specials_item">
+                      <h3>Combo piccolo</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Explicabo, consectetur libero.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="specials_row flex">
+                    <span>$20</span>
+                    <div class="specials_item">
+                      <h3>Combo mezzo</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Explicabo, consectetur libero.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="specials_row flex">
+                    <span>$30</span>
+                    <div class="specials_item">
+                      <h3>Combo grande</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Explicabo, consectetur libero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- third -->
+          <section id="third">
+            <!-- scroll_image -->
+            <div class="scroll_image">
+              <div class="scroll_bg flex just_start align_cen">
+                <div class="scroll_title">
+                  <h2>
+                    Go ahead and <br />
+                    build your <br />
+                    own pizza <br />
+                    we won't <br />
+                    judge!
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- guys -->
+            <div class="guys flex space_bet">
+              <div class="guy">
+                <img src="img/h1-team-1a-700x700.jpg" alt="" />
+                <div class="guy_hover_bg">
+                  <div class="guy_hover flex_center flex_col">
+                    <h3>peter anderson</h3>
+                    <p>Head Chef</p>
+                    <div class="guy_social">
+                      <span><i class="fab fa-instagram"></i></span>
+                      <span><i class="fab fa-twitter"></i></span>
+                      <span><i class="fab fa-facebook"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="guy">
+                <img src="img/h1-team-2a.jpg" alt="" />
+                <div class="guy_hover_bg">
+                  <div class="guy_hover flex_center flex_col">
+                    <h3>sharon hayes</h3>
+                    <p>Executive Chef</p>
+                    <div class="guy_social">
+                      <span><i class="fab fa-instagram"></i></span>
+                      <span><i class="fab fa-twitter"></i></span>
+                      <span><i class="fab fa-facebook"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="guy">
+                <img src="img/h1-team-4a.jpg" alt="" />
+                <div class="guy_hover_bg">
+                  <div class="guy_hover flex_center flex_col">
+                    <h3>frank bailey</h3>
+                    <p>Kitchen Porter</p>
+                    <div class="guy_social">
+                      <span><i class="fab fa-instagram"></i></span>
+                      <span><i class="fab fa-twitter"></i></span>
+                      <span><i class="fab fa-facebook"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="guy">
+                <img src="img/h1-team-3a.jpg" alt="" />
+                <div class="guy_hover_bg">
+                  <div class="guy_hover flex_center flex_col">
+                    <h3>carol simpson</h3>
+                    <p>Sous Chef</p>
+                    <div class="guy_social">
+                      <span><i class="fab fa-instagram"></i></span>
+                      <span><i class="fab fa-twitter"></i></span>
+                      <span><i class="fab fa-facebook"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="partners flex">
+              <div class="partner animate__animated animate__infinite animate__animated animate__slideInRight animate__slow">
+                <img src="img/h1-clients-img-1.png" alt="" />
+              </div>
+              <div class="partner animate__animated animate__infinite animate__animated animate__slideInRight animate__slow">
+                <img src="img/h1-clients-img-2.png" alt="" />
+              </div>
+              <div class="partner animate__animated animate__infinite animate__animated animate__slideInRight animate__slow">
+                <img src="img/h1-clients-img-3.png" alt="" />
+              </div>
+              <div class="partner animate__animated animate__infinite animate__animated animate__slideInRight animate__slow">
+                <img src="img/h1-clients-img-4.png" alt="" />
+              </div>
+              <div class="partner animate__animated animate__infinite animate__animated animate__slideInRight animate__slow">
+                <img src="img/h1-clients-img-5.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <!-- fine homepage -->
+    </div>
+    <!-- fine app -->
+  </body>
 </html>
