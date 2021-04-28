@@ -328,9 +328,7 @@
 
           button.form {
             margin-left: 45px;
-            text-transform: uppercase;
-            color: #ffffff;
-            background-color: #c83b1a;
+            @include btnRed;
           }
 
           span {

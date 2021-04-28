@@ -4,6 +4,7 @@
 @import "partials/main.scss";
 @import "partials/footer.scss";
 
+//common rules
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@
 }
 
 section {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h1,
@@ -20,7 +21,7 @@ h2,
 h3,
 h4,
 span {
-    font-weight: 500;
+  font-weight: 500;
   color: $mainTitles;
   text-transform: uppercase;
 }
@@ -44,13 +45,19 @@ p.big_p {
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
 }
 
 .relative {
-    position: relative;
+  position: relative;
 }
 
 .absolute {
-    position: absolute;
+  position: absolute;
 }

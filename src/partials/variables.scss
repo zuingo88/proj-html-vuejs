@@ -1,3 +1,4 @@
+$colorHead: #ffffff;
 $mainTitles: #303030;
 $mainP: #5a5a5a;
 $spanRed: #d2401e;
@@ -16,4 +17,10 @@ $tSmall: 12px;
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+@mixin btnRed {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #c83b1a;
 }
