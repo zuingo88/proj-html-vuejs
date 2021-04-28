@@ -10,50 +10,84 @@
 
       .nav_container {
         width: 100%;
-        padding: 20px 110px;
+        padding: 0 110px;
         background-color: black;
 
         li {
-          position: relative;
           height: 165px;
+          margin: 0 25px;
           font-size: 14px;
-          line-height: 165px;
           text-transform: uppercase;
+          line-height: 165px;
+          cursor: pointer;
+        }
+      }
+
+      // li:last-of-type {
+      //   margin-left: 50px;
+      // }
+
+      .order_online a {
+        @include btnRed;
+        padding: 15px 30px;
+      }
+
+      .nav_menu {
+        li span.mustache svg {
+          @include mustache;
         }
 
-        li:last-of-type {
-          margin-left: 50px;
+        .logo img {
+          height: 115px;
+          width: 165px;
         }
 
-        .order_online a {
-          @include btnRed;
-          padding: 15px 30px;
+        ul.menu_left {
+          li:hover div.dropdown {
+            display: block;
+          }
+
+          div.dropdown {
+            top: 100%;
+            left: -5px;
+            width: 200px;
+            background-color: #1b1b1b;
+            border-top: 4px solid #d2401e;
+            display: none;
+            z-index: 999;
+
+            ul.drop_one li {
+              height: 40px;
+              line-height: 40px;
+            }
+          }
         }
 
-        .nav_menu {
-          li {
-            margin: 0 25px;
-            cursor: pointer;
-          }
+        // ul.dropdown {
+        //   left: -5px;
+        //   top: 100%;
+        //   background-color: #1b1b1b;
+        //   border-top: 4px solid #d2401e;
+        //   -webkit-transition: top 0.15s ease-out;
+        //   -o-transition: top 0.15s ease-out;
+        //   transition: top 0.15s ease-out;
+        //   z-index: 999;
+        //   display: none;
 
-          li span.mustache svg {
-            @include mustache;
-          }
+        //   li {
+        //     height: 35px;
+        //     color: $colorHead;
+        //     opacity: 0.7;
+        //   }
+      }
 
-          li img {
-            height: 115px;
-            width: 165px;
-          }
+      .nav_right {
+        li span.vespa svg {
+          margin-right: 3px;
         }
 
-        .nav_right {
-          li span.vespa svg {
-            margin-right: 3px;
-          }
-
-          li span {
-            margin-right: 3px;
-          }
+        li span {
+          margin-right: 3px;
         }
       } //fine nav_container
     } //fine header_bg

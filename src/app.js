@@ -3,7 +3,7 @@ function initVue() {
     el: "#app",
 
     data: {
-      lis: [
+      lisLeft: [
         //home
         {
           name: "Home",
@@ -57,42 +57,65 @@ function initVue() {
                 "6 Columns Wide",
               ],
             },
+            //product types
+            {
+              name: "Product Types",
+              items: ["Standard", "Grouped", "Variable", "New", "On Sale"],
+            },
+            //shop pages
+            {
+              name: "Shop Pages",
+              items: ["My Account", "Cart", "Checkout"],
+            },
           ],
-        },
-      ],
+        }, //fine menu
+      ], // fine lisLeft
 
-      menu: [
-        
+      lisRight: [
+        //event
         {
-          name: "Product Types",
-          types: ["Standard", "Grouped", "Variable", "New", "On Sale"],
+          name: "Event",
+          items: ["Event List", "Event Single"],
         },
+        //blog
         {
-          name: "Shop Pages",
-          types: ["My Account", "Cart", "Checkout"],
-        },
-      ], //fine menu
-
-      events: ["Event List", "Event Single"],
-
-      blog: [
-        "Right Sidebar",
-        "Left Sidebar",
-        "Without Sidebar",
-        {
-          name: "Post Types",
-          types: [
-            "Standard",
-            "Gallery",
-            "Quote",
-            "Link",
-            "Audio",
-            "Video",
-            "No Sidebar",
+          name: "Blog",
+          items: [
+            {
+              name: "Right Sidebar",
+              items: "",
+            },
+            {
+              name: "Left Sidebar",
+              items: "",
+            },
+            {
+              name: "Without Sidebar",
+              items: "",
+            },
+            //post types
+            {
+              name: "Post Types",
+              items: [
+                "Standard",
+                "Gallery",
+                "Quote",
+                "Link",
+                "Audio",
+                "Video",
+                "No Sidebar",
+              ],
+            },
           ],
+        }, //fine blog
+        //landing
+        {
+          name: "Landing",
+          item: "",
         },
-      ], //fine blog
+      ], //fine lisRight
     }, //fine data
+
     methods: {
       saluti: function () {
         console.log("ciao a tutti");

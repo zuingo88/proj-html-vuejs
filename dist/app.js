@@ -11,7 +11,7 @@ function initVue() {
   new Vue({
     el: "#app",
     data: {
-      lis: [//home
+      lisLeft: [//home
       {
         name: "Home",
         items: ["Main Home", "Italian Restaurant", "Pizzeria Home", "Pizza Light", "Pizza Dark", "Fast Food Home"]
@@ -30,21 +30,45 @@ function initVue() {
         {
           name: "List Layouts",
           items: ["3 Columns", "4 Columns", "4 Columns Wide", "5 Columns", "5 Columns Wide", "6 Columns Wide"]
+        }, //product types
+        {
+          name: "Product Types",
+          items: ["Standard", "Grouped", "Variable", "New", "On Sale"]
+        }, //shop pages
+        {
+          name: "Shop Pages",
+          items: ["My Account", "Cart", "Checkout"]
         }]
-      }],
-      menu: [{
-        name: "Product Types",
-        types: ["Standard", "Grouped", "Variable", "New", "On Sale"]
-      }, {
-        name: "Shop Pages",
-        types: ["My Account", "Cart", "Checkout"]
-      }],
-      //fine menu
-      events: ["Event List", "Event Single"],
-      blog: ["Right Sidebar", "Left Sidebar", "Without Sidebar", {
-        name: "Post Types",
-        types: ["Standard", "Gallery", "Quote", "Link", "Audio", "Video", "No Sidebar"]
-      }] //fine blog
+      } //fine menu
+      ],
+      // fine lisLeft
+      lisRight: [//event
+      {
+        name: "Event",
+        items: ["Event List", "Event Single"]
+      }, //blog
+      {
+        name: "Blog",
+        items: [{
+          name: "Right Sidebar",
+          items: ""
+        }, {
+          name: "Left Sidebar",
+          items: ""
+        }, {
+          name: "Without Sidebar",
+          items: ""
+        }, //post types
+        {
+          name: "Post Types",
+          items: ["Standard", "Gallery", "Quote", "Link", "Audio", "Video", "No Sidebar"]
+        }]
+      }, //fine blog
+      //landing
+      {
+        name: "Landing",
+        item: ""
+      }] //fine lisRight
 
     },
     //fine data

@@ -53,45 +53,55 @@
 }
 #homepage header .header_bg .nav_container {
   width: 100%;
-  padding: 20px 110px;
+  padding: 0 110px;
   background-color: black;
 }
 #homepage header .header_bg .nav_container li {
-  position: relative;
   height: 165px;
+  margin: 0 25px;
   font-size: 14px;
-  line-height: 165px;
   text-transform: uppercase;
+  line-height: 165px;
+  cursor: pointer;
 }
-#homepage header .header_bg .nav_container li:last-of-type {
-  margin-left: 50px;
-}
-#homepage header .header_bg .nav_container .order_online a {
+#homepage header .header_bg .order_online a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #c83b1a;
   padding: 15px 30px;
 }
-#homepage header .header_bg .nav_container .nav_menu li {
-  margin: 0 25px;
-  cursor: pointer;
-}
-#homepage header .header_bg .nav_container .nav_menu li span.mustache svg {
+#homepage header .header_bg .nav_menu li span.mustache svg {
   margin-right: 3px;
   height: 18px;
   width: 25px;
 }
-#homepage header .header_bg .nav_container .nav_menu li span.mustache svg path {
+#homepage header .header_bg .nav_menu li span.mustache svg path {
   fill: #ffffff;
 }
-#homepage header .header_bg .nav_container .nav_menu li img {
+#homepage header .header_bg .nav_menu .logo img {
   height: 115px;
   width: 165px;
 }
-#homepage header .header_bg .nav_container .nav_right li span.vespa svg {
+#homepage header .header_bg .nav_menu ul.menu_left li:hover div.dropdown {
+  display: block;
+}
+#homepage header .header_bg .nav_menu ul.menu_left div.dropdown {
+  top: 100%;
+  left: -5px;
+  width: 200px;
+  background-color: #1b1b1b;
+  border-top: 4px solid #d2401e;
+  display: none;
+  z-index: 999;
+}
+#homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_one li {
+  height: 40px;
+  line-height: 40px;
+}
+#homepage header .header_bg .nav_right li span.vespa svg {
   margin-right: 3px;
 }
-#homepage header .header_bg .nav_container .nav_right li span {
+#homepage header .header_bg .nav_right li span {
   margin-right: 3px;
 }
 
@@ -434,4 +444,8 @@ a {
 
 .absolute {
   position: absolute;
+}
+
+.hidden {
+  display: none;
 }
