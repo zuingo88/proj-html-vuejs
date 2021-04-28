@@ -24,3 +24,13 @@ $tSmall: 12px;
   color: #ffffff;
   background-color: #c83b1a;
 }
+
+@mixin mustache {
+  margin-right: 3px;
+  height: 18px;
+  width: 25px;
+
+  path {
+    fill: $colorHead;
+  }
+}

@@ -56,6 +56,16 @@
   padding: 20px 110px;
   background-color: black;
 }
+#homepage header .header_bg .nav_container li {
+  position: relative;
+  height: 165px;
+  font-size: 14px;
+  line-height: 165px;
+  text-transform: uppercase;
+}
+#homepage header .header_bg .nav_container li:last-of-type {
+  margin-left: 50px;
+}
 #homepage header .header_bg .nav_container .order_online a {
   text-transform: uppercase;
   color: #ffffff;
@@ -64,17 +74,25 @@
 }
 #homepage header .header_bg .nav_container .nav_menu li {
   margin: 0 25px;
-  font-size: 12px;
-  text-transform: uppercase;
+  cursor: pointer;
 }
-#homepage header .header_bg .nav_container .nav_menu li span.mustache {
-  height: 25px;
+#homepage header .header_bg .nav_container .nav_menu li span.mustache svg {
+  margin-right: 3px;
+  height: 18px;
   width: 25px;
-  color: #ffffff;
+}
+#homepage header .header_bg .nav_container .nav_menu li span.mustache svg path {
+  fill: #ffffff;
 }
 #homepage header .header_bg .nav_container .nav_menu li img {
   height: 115px;
   width: 165px;
+}
+#homepage header .header_bg .nav_container .nav_right li span.vespa svg {
+  margin-right: 3px;
+}
+#homepage header .header_bg .nav_container .nav_right li span {
+  margin-right: 3px;
 }
 
 #homepage main #first .images {

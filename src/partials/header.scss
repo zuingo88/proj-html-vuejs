@@ -13,6 +13,18 @@
         padding: 20px 110px;
         background-color: black;
 
+        li {
+          position: relative;
+          height: 165px;
+          font-size: 14px;
+          line-height: 165px;
+          text-transform: uppercase;
+        }
+
+        li:last-of-type {
+          margin-left: 50px;
+        }
+
         .order_online a {
           @include btnRed;
           padding: 15px 30px;
@@ -21,20 +33,26 @@
         .nav_menu {
           li {
             margin: 0 25px;
-            font-size: 12px;
-            text-transform: uppercase;
+            cursor: pointer;
           }
 
-          li span.mustache {
-              height: 25px;
-              width: 25px;
-              color: $colorHead;
-            //   background-image: url(img/svg/svg-0.svg);
-            //   background-size: 25px 25px;
+          li span.mustache svg {
+            @include mustache;
           }
+
           li img {
             height: 115px;
             width: 165px;
+          }
+        }
+
+        .nav_right {
+          li span.vespa svg {
+            margin-right: 3px;
+          }
+
+          li span {
+            margin-right: 3px;
           }
         }
       } //fine nav_container
