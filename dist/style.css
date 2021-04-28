@@ -285,6 +285,48 @@
   height: 100%;
   width: 100%;
 }
+#homepage main #sixth .to_book_bg {
+  height: 295px;
+  width: 100%;
+  background-image: url(img/h3-background-img-3.jpg);
+  background-size: cover;
+}
+#homepage main #sixth .to_book_bg .to_book .form {
+  height: 65px;
+  width: 265px;
+  padding: 21px 46px 21px 29px;
+  color: #858585;
+  border: solid 1px black;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-position-x: 90%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#homepage main #sixth .to_book_bg .to_book select.form {
+  background-image: url(img/vector-people.png);
+  background-size: 35px 35px;
+}
+#homepage main #sixth .to_book_bg .to_book input.date {
+  background-image: url(img/vector-calendar.png);
+  background-size: 25px 25px;
+}
+#homepage main #sixth .to_book_bg .to_book input.time {
+  background-image: url(img/time-vector.png);
+  background-size: 25px 25px;
+}
+#homepage main #sixth .to_book_bg .to_book button.form {
+  margin-left: 45px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #c83b1a;
+}
+#homepage main #sixth .to_book_bg .to_book span {
+  margin: 15px;
+  color: #ffffff;
+}
 
 * {
   margin: 0;

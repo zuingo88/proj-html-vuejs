@@ -289,5 +289,56 @@
         @include fullSize;
       }
     } //fine fifth
+
+    #sixth {
+      .to_book_bg {
+        height: 295px;
+        width: 100%;
+        background-image: url(img/h3-background-img-3.jpg);
+        background-size: cover;
+
+        .to_book {
+          .form {
+            height: 65px;
+            width: 265px;
+            padding: 21px 46px 21px 29px;
+            color: #858585;
+            border: solid 1px black;
+            appearance: none;
+            background-position-x: 90%;
+            background-position-y: 50%;
+            background-repeat: no-repeat;
+            cursor: pointer;
+          }
+
+          select.form {
+            background-image: url(img/vector-people.png);
+            background-size: 35px 35px;
+          }
+
+          input.date {
+            background-image: url(img/vector-calendar.png);
+            background-size: 25px 25px;
+          }
+
+          input.time {
+            background-image: url(img/time-vector.png);
+            background-size: 25px 25px;
+          }
+
+          button.form {
+            margin-left: 45px;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #c83b1a;
+          }
+
+          span {
+            margin: 15px;
+            color: #ffffff;
+          }
+        }
+      }
+    } //fine sixth
   } //fine main
 } //fine homepage
