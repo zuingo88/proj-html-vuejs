@@ -54,12 +54,16 @@
 
                 <!-- nav_menu -->
                 <div class="nav_menu flex_center">
-
                   <!-- menu_left -->
                   <ul class="menu_left flex_center">
-                    <li v-for="(li, index) in lisLeft" class="flex_center relative">
-                      <span class="mustache flex_center hidden">
-                        <!-- <img src="img/svg/svg-0.svg" alt="" /> -->
+                    <li
+                      v-for="(li, index) in lisLeft"
+                      class="flex_center relative"
+                    >
+                      <span
+                        class="mustache flex_center"
+                        :class="index == 0 ? '' : 'hidden'"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 25 11"
@@ -75,9 +79,16 @@
                       </span>
                       {{ li.name }}
 
-                      <div class="dropdown absolute">
+                      <div class="dropdown drop_first absolute">
                         <ul class="drop_one">
-                          <li v-for="item in li.items">{{ item }}</li>
+                          <li v-for="item in li.items">
+                            {{ item.name }}
+                            <div class="dropdown drop_second absolute">
+                              <ul v-if="item.items" class="drop_one">
+                                <li v-for="elem in item.items">{{ elem }}</li>
+                              </ul>
+                            </div>
+                          </li>
                         </ul>
                       </div>
 

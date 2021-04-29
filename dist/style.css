@@ -58,7 +58,7 @@
 }
 #homepage header .header_bg .nav_container li {
   height: 165px;
-  margin: 0 25px;
+  padding: 0 20px;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 165px;
@@ -68,7 +68,7 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #c83b1a;
-  padding: 15px 30px;
+  padding: 10px 20px;
 }
 #homepage header .header_bg .nav_menu li span.mustache svg {
   margin-right: 3px;
@@ -82,12 +82,10 @@
   height: 115px;
   width: 165px;
 }
-#homepage header .header_bg .nav_menu ul.menu_left li:hover div.dropdown {
+#homepage header .header_bg .nav_menu ul.menu_left li:hover div.drop_first {
   display: block;
 }
 #homepage header .header_bg .nav_menu ul.menu_left div.dropdown {
-  top: 100%;
-  left: -5px;
   width: 200px;
   background-color: #1b1b1b;
   border-top: 4px solid #d2401e;
@@ -97,6 +95,21 @@
 #homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_one li {
   height: 40px;
   line-height: 40px;
+  opacity: 0.6;
+}
+#homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_one li:hover {
+  opacity: 1;
+}
+#homepage header .header_bg .nav_menu ul.menu_left .drop_first {
+  top: 100%;
+  left: -5px;
+}
+#homepage header .header_bg .nav_menu ul.menu_left .drop_first li:hover .drop_second {
+  display: block;
+}
+#homepage header .header_bg .nav_menu ul.menu_left .drop_second {
+  top: -4px;
+  left: 100%;
 }
 #homepage header .header_bg .nav_right li span.vespa svg {
   margin-right: 3px;
@@ -237,6 +250,7 @@
   width: 100%;
   padding: 90px 140px;
   background: #f7f7f2;
+  overflow: hidden;
 }
 #homepage main #third .partners .partner {
   height: 260px;

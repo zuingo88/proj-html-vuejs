@@ -8,31 +8,69 @@ function initVue() {
         {
           name: "Home",
           items: [
-            "Main Home",
-            "Italian Restaurant",
-            "Pizzeria Home",
-            "Pizza Light",
-            "Pizza Dark",
-            "Fast Food Home",
+            {
+              name: "Main Home",
+              items: "",
+            },
+            {
+              name: "Italian Restaurant",
+              items: "",
+            },
+            {
+              name: "Pizzeria Home",
+              items: "",
+            },
+            {
+              name: "Pizza Light",
+              items: "",
+            },
+            {
+              name: "Pizza Dark",
+              items: "",
+            },
+            {
+              name: "Fast Food Home",
+              items: "",
+            },
           ],
-        },
+        }, //fine home
+
         //pages
         {
           name: "Pages",
           items: [
-            "About Us",
-            "Our Services",
-            "Our Team",
-            "Our History",
-            "Reservation",
-            "Contact Us",
+            {
+              name: "About Us",
+              items: "",
+            },
+            {
+              name: "Our Services",
+              items: "",
+            },
+            {
+              name: "Our Team",
+              items: "",
+            },
+            {
+              name: "Our History",
+              items: "",
+            },
+            {
+              name: "Reservation",
+              items: "",
+            },
+            {
+              name: "Contact Us",
+              items: "",
+            },
           ],
-        },
+        }, //fine pages
+
         //menu
         {
           name: "Menu",
           items: [
-            //List Types
+            //list types
             {
               name: "List Types",
               items: [
@@ -68,8 +106,8 @@ function initVue() {
               items: ["My Account", "Cart", "Checkout"],
             },
           ],
-        }, //fine menu
-      ], // fine lisLeft
+        },
+      ], //fine lisLeft
 
       lisRight: [
         //event

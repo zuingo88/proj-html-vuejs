@@ -15,7 +15,7 @@
 
         li {
           height: 165px;
-          margin: 0 25px;
+          padding: 0 20px;
           font-size: 14px;
           text-transform: uppercase;
           line-height: 165px;
@@ -29,7 +29,7 @@
 
       .order_online a {
         @include btnRed;
-        padding: 15px 30px;
+        padding: 10px 20px;
       }
 
       .nav_menu {
@@ -43,13 +43,11 @@
         }
 
         ul.menu_left {
-          li:hover div.dropdown {
+          li:hover div.drop_first {
             display: block;
           }
 
           div.dropdown {
-            top: 100%;
-            left: -5px;
             width: 200px;
             background-color: #1b1b1b;
             border-top: 4px solid #d2401e;
@@ -59,7 +57,28 @@
             ul.drop_one li {
               height: 40px;
               line-height: 40px;
+              opacity: 0.6;
+
+              &:hover {
+                opacity: 1;
+              }
             }
+
+
+          }
+
+          .drop_first {
+            top: 100%;
+            left: -5px;
+
+            li:hover .drop_second {
+              display: block;
+            }
+          }
+
+          .drop_second {
+            top: -4px;
+            left: 100%;
           }
         }
 
