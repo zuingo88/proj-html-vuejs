@@ -42,7 +42,8 @@
           width: 165px;
         }
 
-        ul.menu_left {
+        ul.menu_left,
+        ul.menu_right {
           li:hover div.drop_first {
             display: block;
           }
