@@ -89,16 +89,29 @@
   width: 200px;
   background-color: #1b1b1b;
   border-top: 4px solid #d2401e;
+  transition: top 0.15s ease-out;
   display: none;
   z-index: 999;
 }
-#homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_one li {
+#homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_ul li {
   height: 40px;
   line-height: 40px;
   opacity: 0.6;
 }
-#homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_one li:hover {
+#homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_ul li span.mustache {
+  display: none;
+}
+#homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_ul li:hover {
   opacity: 1;
+}
+#homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_ul li:hover span.mustache {
+  display: block;
+}
+#homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_ul li ul.ul_second li span.mustache {
+  display: none;
+}
+#homepage header .header_bg .nav_menu ul.menu_left div.dropdown ul.drop_ul li ul.ul_second li:hover span.mustache {
+  display: block;
 }
 #homepage header .header_bg .nav_menu ul.menu_left .drop_first {
   top: 100%;

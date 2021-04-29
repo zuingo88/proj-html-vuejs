@@ -82,7 +82,13 @@ function initVue() {
       lisRight: [//event
       {
         name: "Event",
-        items: ["Event List", "Event Single"]
+        items: [{
+          name: "Event List",
+          items: ""
+        }, {
+          name: "Event Single",
+          items: ""
+        }]
       }, //blog
       {
         name: "Blog",
