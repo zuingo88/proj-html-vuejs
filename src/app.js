@@ -161,13 +161,53 @@ function initVue() {
           item: "",
         },
       ], //fine lisRight
+
+      hiddenSearch: true,
+
+      image: "img/h3-rev-img-",
+      currentDown: 1,
+      currentUp: 2,
+      timer: null,
     }, //fine data
 
     methods: {
-      saluti: function () {
-        console.log("ciao a tutti");
+      next: function () {
+        this.currentDown += 2;
+        if (this.currentDown > 5) {
+          this.currentDown = 1;
+        }
+
+        this.currentUp += 2;
+        if (this.currentUp > 6) {
+          this.currentUp = 2;
+        }
+      },
+
+      prev: function () {
+        this.currentDown -= 2;
+        if (this.currentDown < 1) {
+          this.currentDown = 5;
+        }
+
+        this.currentUp -= 2;
+        if (this.currentUp < 2) {
+          this.currentUp = 6;
+        }
+      },
+
+      startRotation: function () {
+        this.timer = setInterval(this.next, 3000);
+      },
+
+      stopRotation: function () {
+        clearTimeout(this.timer);
+        this.timer = null;
       },
     }, //fine methods
+
+    mounted: function () {
+      this.startRotation();
+    },
   }); //fine new Vue
 } //fine initVue
 

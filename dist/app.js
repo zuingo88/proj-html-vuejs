@@ -111,16 +111,54 @@ function initVue() {
       {
         name: "Landing",
         item: ""
-      }] //fine lisRight
-
+      }],
+      //fine lisRight
+      hiddenSearch: true,
+      image: "img/h3-rev-img-",
+      currentDown: 1,
+      currentUp: 2,
+      timer: null
     },
     //fine data
     methods: {
-      saluti: function saluti() {
-        console.log("ciao a tutti");
-      }
-    } //fine methods
+      next: function next() {
+        this.currentDown += 2;
 
+        if (this.currentDown > 5) {
+          this.currentDown = 1;
+        }
+
+        this.currentUp += 2;
+
+        if (this.currentUp > 6) {
+          this.currentUp = 2;
+        }
+      },
+      prev: function prev() {
+        this.currentDown -= 2;
+
+        if (this.currentDown < 1) {
+          this.currentDown = 5;
+        }
+
+        this.currentUp -= 2;
+
+        if (this.currentUp < 2) {
+          this.currentUp = 6;
+        }
+      },
+      startRotation: function startRotation() {
+        this.timer = setInterval(this.next, 3000);
+      },
+      stopRotation: function stopRotation() {
+        clearTimeout(this.timer);
+        this.timer = null;
+      }
+    },
+    //fine methods
+    mounted: function mounted() {
+      this.startRotation();
+    }
   }); //fine new Vue
 } //fine initVue
 

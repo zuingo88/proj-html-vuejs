@@ -34,3 +34,23 @@ $tSmall: 12px;
     fill: $colorHead;
   }
 }
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes toDown {
+  0% {
+    transform: translate(-50%, -60%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

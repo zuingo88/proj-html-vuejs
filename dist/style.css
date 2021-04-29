@@ -1,3 +1,35 @@
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes toDown {
+  0% {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes toDown {
+  0% {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
 /* regole flex */
 .flex {
   display: flex;
@@ -54,7 +86,6 @@
 #homepage header .header_bg .nav_container {
   width: 100%;
   padding: 0 110px;
-  background-color: black;
 }
 #homepage header .header_bg .nav_container li {
   height: 165px;
@@ -68,7 +99,11 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #c83b1a;
+  margin-right: 25px;
   padding: 10px 20px;
+}
+#homepage header .header_bg .order_online a:hover {
+  filter: grayscale(0.3);
 }
 #homepage header .header_bg .nav_menu li span.mustache svg {
   margin-right: 3px;
@@ -135,11 +170,86 @@
   top: -4px;
   left: 100%;
 }
+#homepage header .header_bg .nav_right li {
+  margin: 0;
+  padding: 0 0 0 15px;
+}
 #homepage header .header_bg .nav_right li span.vespa svg {
   margin-right: 3px;
 }
 #homepage header .header_bg .nav_right li span {
   margin-right: 3px;
+}
+#homepage header .header_bg .nav_right div.big_search {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 0 110px;
+  height: 150px;
+  background-color: #fff;
+}
+#homepage header .header_bg .nav_right div.big_search span i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #303030;
+}
+#homepage header .header_bg .nav_right div.big_search input {
+  flex-grow: 1;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #303030;
+  border: none;
+}
+#homepage header .header_bg .nav_right div.big_search input:focus {
+  outline: none;
+}
+#homepage header .header_bg .carousel {
+  height: 455px;
+  margin: 15px 10px;
+}
+#homepage header .header_bg .carousel:hover .imageUp, #homepage header .header_bg .carousel:hover .imageDown {
+  -webkit-animation: none;
+          animation: none;
+}
+#homepage header .header_bg .carousel .arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: white;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#homepage header .header_bg .carousel .arrow:hover {
+  opacity: 1;
+  scale: 1.2;
+}
+#homepage header .header_bg .carousel .arrow span {
+  font-size: 13px;
+}
+#homepage header .header_bg .carousel .arrow.left {
+  left: 5px;
+}
+#homepage header .header_bg .carousel .arrow.right {
+  right: 5px;
+}
+#homepage header .header_bg .imageDown {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 333px;
+  width: 865px;
+  -webkit-animation: pulse 3s infinite;
+          animation: pulse 3s infinite;
+}
+#homepage header .header_bg .imageUp {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 455px;
+  width: 360px;
+  -webkit-animation: toDown 3s infinite;
+          animation: toDown 3s infinite;
 }
 
 #homepage main #first .images {
