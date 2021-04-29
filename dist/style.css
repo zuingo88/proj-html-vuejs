@@ -76,6 +76,10 @@
   align-items: center;
 }
 
+.align_end {
+  align-items: flex-end;
+}
+
 #homepage header * {
   color: #ffffff;
 }
@@ -279,7 +283,7 @@
 }
 #homepage main #second .specials .specials_poster {
   position: relative;
-  height: 740px;
+  height: 600px;
   width: 50%;
 }
 #homepage main #second .specials .specials_poster img {
@@ -336,7 +340,7 @@
   color: #ffffff;
 }
 #homepage main #third .guys {
-  height: 395px;
+  height: 320px;
   width: 100%;
 }
 #homepage main #third .guys .guy {
@@ -537,6 +541,94 @@
   color: #ffffff;
 }
 
+#homepage footer .footer_container {
+  height: 640px;
+  width: 100%;
+}
+#homepage footer .footer_container .left_part {
+  width: 50%;
+  padding: 30px 40px;
+  background-image: url(img/bg.png);
+}
+#homepage footer .footer_container .left_part li {
+  margin-top: 20px;
+}
+#homepage footer .footer_container .left_part h2 {
+  margin: 0 16% 30px;
+  font-size: 25px;
+  color: #ffffff;
+}
+#homepage footer .footer_container .left_part h4 {
+  font-size: 18px;
+}
+#homepage footer .footer_container .left_part h6 {
+  font-size: 14px;
+}
+#homepage footer .footer_container .left_part h4,
+#homepage footer .footer_container .left_part h6 {
+  color: #b7903c;
+}
+#homepage footer .footer_container .left_part span {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #b2b2b2;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+#homepage footer .footer_container .left_part span:hover {
+  color: #b7903c;
+}
+#homepage footer .footer_container .left_part .first_col {
+  width: 30%;
+}
+#homepage footer .footer_container .left_part .second_col {
+  width: 30%;
+}
+#homepage footer .footer_container .left_part .second_col ul.no_hover span:hover {
+  color: #b2b2b2;
+}
+#homepage footer .footer_container .left_part .second_col .social {
+  margin-top: 20px;
+}
+#homepage footer .footer_container .left_part .second_col .social li {
+  color: white;
+  margin: 0 0 0 5px;
+}
+#homepage footer .footer_container .left_part .second_col .social li:hover {
+  color: #b7903c;
+}
+#homepage footer .footer_container .left_part .third_col {
+  width: 30%;
+}
+#homepage footer .footer_container .left_part .third_col h2 {
+  font-size: 25px;
+  line-height: 37px;
+  color: #ffffff;
+}
+#homepage footer .footer_container .left_part .last_row {
+  width: 100%;
+}
+#homepage footer .footer_container .left_part .last_row .gold {
+  text-transform: none;
+  font-size: 12px;
+  color: #b7903c;
+}
+#homepage footer .footer_container .left_part .last_row .green {
+  text-transform: none;
+  font-size: 12px;
+  color: #339966;
+}
+#homepage footer .footer_container .left_part .last_row .last_right {
+  flex-grow: 1;
+}
+#homepage footer .footer_container .right_part {
+  width: 50%;
+  background-image: url(img/footer-img-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -552,6 +644,7 @@ h1,
 h2,
 h3,
 h4,
+h6,
 span {
   font-weight: 500;
   color: #303030;

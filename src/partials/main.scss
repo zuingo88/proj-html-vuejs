@@ -31,7 +31,7 @@
       .specials {
         .specials_poster {
           position: relative;
-          height: 740px;
+          height: 600px;
           width: 50%;
 
           img {
@@ -103,7 +103,7 @@
       }
 
       .guys {
-        height: 395px;
+        height: 320px;
         width: 100%;
         //padding: 10px 0;
 
@@ -190,6 +190,10 @@
       .flavors_slider {
         height: 340px;
         width: 100%;
+
+        // transform: translate3d(1918px ,0px, 0px);
+        // transition: all 0.6 ease 0s;
+        // width:5757px;
 
         img {
           height: 180px;

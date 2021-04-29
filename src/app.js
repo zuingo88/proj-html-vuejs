@@ -168,9 +168,55 @@ function initVue() {
       currentDown: 1,
       currentUp: 2,
       timer: null,
+
+      restaurants: [
+        {
+          via: "1614 E. Bell Rd #104.",
+          citta: "Salerno, AZ 85022",
+          numero: "(602) 867-1010",
+        },
+        {
+          via: "204 E. Pizzetta Tommaso",
+          citta: "Sorrento, AZ 85022",
+          numero: "(358) 867-1010",
+        },
+        {
+          via: "Vale Puglia 54",
+          citta: "Torre Del Greco, AZ 85022",
+          numero: "(359) 867-1010",
+        },
+        {
+          via: "Corso Itali AA",
+          citta: "Naples, AZ 85022",
+          numero: "(989) 867-1010",
+        },
+      ],
+
+      days: [
+        {
+          name: "monday",
+          turn: "Kitchen Closed",
+        },
+        {
+          name: "tuesday until friday",
+          turn: "9:00 - 22:00",
+        },
+        {
+          name: "saturday",
+          turn: "Saturday 11am to midnight",
+        },
+        {
+          name: "Sunday",
+          turn: "9:00 - 22:00",
+        },
+      ],
     }, //fine data
 
     methods: {
+      showSearch: function () {
+        this.hiddenSearch = !this.hiddenSearch;
+      },
+
       next: function () {
         this.currentDown += 2;
         if (this.currentDown > 5) {

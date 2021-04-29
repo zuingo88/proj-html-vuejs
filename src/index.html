@@ -250,17 +250,17 @@
                       cart
                     </li>
                     <li class="flex_center">
-                      <span class="search flex_center">
+                      <span @click="showSearch" class="search flex_center">
                         <i class="fas fa-search"></i>
                       </span>
                       search
                     </li>
                   </ul>
-                  <div class="big_search absolute flex space_bet align_cen">
+                  <div :class="{hidden: hiddenSearch}" class="big_search absolute flex space_bet align_cen">
                     <span><i class="fas fa-search"></i></span>
                     <input type="search" placeholder="Search..." />
 
-                    <svg
+                    <svg  @click="showSearch"
                       xmlns="http://www.w3.org/2000/svg"
                       width="50"
                       viewBox="0 0 64 64"
@@ -680,6 +680,68 @@
             </div>
           </section>
         </main>
+
+        <footer>
+          <div class="footer_container flex">
+            <div class="left_part">
+              <div class="row_container flex">
+                <!-- first_col -->
+                <div class="first_col flex_col">
+                  <h4>find our restaurant</h4>
+                  <ul>
+                    <li v-for="restaurant in restaurants">
+                      <span>{{ restaurant.via }}</span>
+                      <span>{{ restaurant.citta }}</span>
+                      <span>{{ restaurant.numero }}</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- second_col -->
+                <div class="second_col">
+                  <h4>working hours</h4>
+                  <ul class="no_hover">
+                    <li v-for="day in days">
+                      <h6>{{ day.name }}</h6>
+                      <span>{{ day.turn }}</span>
+                    </li>
+                  </ul>
+                  <div class="social flex just_start align_cen">
+                    <h6>follow us:</h6>
+                    <ul class="flex">
+                      <li><i class="fab fa-twitter"></i></li>
+                      <li><i class="fab fa-facebook"></i></li>
+                      <li><i class="fab fa-instagram"></i></li>
+                      <li><i class="fab fa-linkedin"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- third_col -->
+                <div class="third_col">
+                  <h2>
+                    THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC,
+                    WELL BAKED SLICE OF PIZZA.
+                  </h2>
+                </div>
+              </div>
+              <!-- fine row_container -->
+
+              <!-- last_row -->
+              <div class="last_row flex">
+                <div class="last_left flex align_end">
+                  <span class="gold">Created with ansia by</span>
+                  <span class="green">Valerio Sgura</span>
+                </div>
+                <div class="last_right flex just_end">
+                  <img src="img/natural.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- right_part -->
+            <div class="right_part"></div>
+            </div>
+          </div>
+        </footer>
       </div>
       <!-- fine homepage -->
     </div>

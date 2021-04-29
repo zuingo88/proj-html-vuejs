@@ -1,0 +1,113 @@
+#homepage {
+  footer {
+    .footer_container {
+      height: 640px;
+      width: 100%;
+
+      .left_part {
+        width: 50%;
+        padding: 30px 40px;
+        background-image: url(img/bg.png);
+
+        li {
+          margin-top: 20px;
+        }
+
+        h2 {
+          margin: 0 16% 30px;
+          font-size: 25px;
+          color: $colorHead;
+        }
+
+        h4 {
+          font-size: 18px;
+        }
+
+        h6 {
+          font-size: 14px;
+        }
+
+        h4,
+        h6 {
+          color: $footh;
+        }
+
+        span {
+          display: block;
+          font-family: "Open Sans", sans-serif;
+          font-size: 15px;
+          color: #b2b2b2;
+          text-transform: capitalize;
+          transition: 0.5s;
+
+          &:hover {
+            color: $footh;
+          }
+        }
+
+        .first_col {
+          width: 30%;
+        }
+
+        .second_col {
+          width: 30%;
+
+          ul.no_hover {
+            span:hover {
+              color: #b2b2b2;
+            }
+          }
+
+          .social {
+            margin-top: 20px;
+
+            li {
+              color: white;
+              margin: 0 0 0 5px;
+
+              &:hover {
+                color: $footh;
+              }
+            }
+          }
+        }
+
+        .third_col {
+          width: 30%;
+          h2 {
+            font-size: 25px;
+            line-height: 37px;
+            color: $colorHead;
+          }
+        }
+
+        .last_row {
+          width: 100%;
+
+          .gold {
+            text-transform: none;
+            font-size: 12px;
+            color: $footh;
+          }
+
+          .green {
+            text-transform: none;
+            font-size: 12px;
+            color: #339966;
+          }
+
+          .last_right {
+            flex-grow: 1;
+          }
+        }
+      } //fine left_part
+
+      .right_part {
+        width: 50%;
+        background-image: url(img/footer-img-1.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}
