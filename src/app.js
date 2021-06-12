@@ -1,8 +1,11 @@
 function initVue() {
+
   new Vue({
+
     el: "#app",
 
     data: {
+      // inizio lista elementi dropdown header-----------------------------
       lisLeft: [
         //home
         {
@@ -162,13 +165,18 @@ function initVue() {
         },
       ], //fine lisRight
 
+      // fine lista elementi dropdown header-------------------------------
+
+      //search nell'header
       hiddenSearch: true,
 
+      //animazione header
       image: "img/h3-rev-img-",
       currentDown: 1,
       currentUp: 2,
       timer: null,
 
+      // inizio lista elementi footer--------------------------------------
       restaurants: [
         {
           via: "1614 E. Bell Rd #104.",
@@ -210,13 +218,16 @@ function initVue() {
           turn: "9:00 - 22:00",
         },
       ],
+      // fine lista elementi footer----------------------------------------
     }, //fine data
 
     methods: {
+      //funzione per mostrare/nascondere search nell'header
       showSearch: function () {
         this.hiddenSearch = !this.hiddenSearch;
       },
 
+      //funzioni per animazione header
       next: function () {
         this.currentDown += 2;
         if (this.currentDown > 5) {

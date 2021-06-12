@@ -11,6 +11,7 @@ function initVue() {
   new Vue({
     el: "#app",
     data: {
+      // inizio lista elementi dropdown header-----------------------------
       lisLeft: [//home
       {
         name: "Home",
@@ -113,11 +114,15 @@ function initVue() {
         item: ""
       }],
       //fine lisRight
+      // fine lista elementi dropdown header-------------------------------
+      //search nell'header
       hiddenSearch: true,
+      //animazione header
       image: "img/h3-rev-img-",
       currentDown: 1,
       currentUp: 2,
       timer: null,
+      // inizio lista elementi footer--------------------------------------
       restaurants: [{
         via: "1614 E. Bell Rd #104.",
         citta: "Salerno, AZ 85022",
@@ -147,13 +152,16 @@ function initVue() {
       }, {
         name: "Sunday",
         turn: "9:00 - 22:00"
-      }]
+      }] // fine lista elementi footer----------------------------------------
+
     },
     //fine data
     methods: {
+      //funzione per mostrare/nascondere search nell'header
       showSearch: function showSearch() {
         this.hiddenSearch = !this.hiddenSearch;
       },
+      //funzioni per animazione header
       next: function next() {
         this.currentDown += 2;
 

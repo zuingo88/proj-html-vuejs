@@ -395,6 +395,12 @@
   width: 20%;
   --animation-duration: 3s;
 }
+#homepage main #third .partners .partner:hover {
+  -webkit-animation: bounce;
+          animation: bounce;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
 #homepage main #fourth {
   margin-top: 80px;
 }
@@ -422,6 +428,12 @@
 #homepage main #fourth .flavors_slider img {
   height: 180px;
   width: 180px;
+}
+#homepage main #fourth .flavors_slider img:hover {
+  -webkit-animation: rotateIn;
+          animation: rotateIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 #homepage main #fourth .flavors_slider h4 {
   font-size: 20px;
@@ -471,6 +483,7 @@
   color: #ffffff;
 }
 #homepage main #fifth .events .event {
+  padding: 20px;
   height: 200px;
   width: 540px;
 }

@@ -18,9 +18,10 @@
   },
   "homepage": "https://github.com/zuingo88/proj-html-vuejs#readme",
   "dependencies": {
-    "laravel-mix": "^6.0.18"
+    "aos": "^3.0.0-beta.6"
   },
   "devDependencies": {
+    "laravel-mix": "^6.0.19",
     "postcss": "^8.1.14",
     "sass": "^1.32.11",
     "sass-loader": "^11.0.1"

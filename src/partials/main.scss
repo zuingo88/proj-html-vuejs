@@ -161,6 +161,11 @@
           height: 260px;
           width: 20%;
           --animation-duration: 3s;
+
+          &:hover {
+            animation: bounce; 
+            animation-duration: 1s;
+          }
         }
       }
     } //fine third
@@ -170,9 +175,11 @@
 
       .pizza_flavors {
         width: 100%;
+
         .choose {
           width: 675px;
           text-align: center;
+
           span {
             color: $spanRed;
             font-size: $tSmall;
@@ -191,13 +198,14 @@
         height: 340px;
         width: 100%;
 
-        // transform: translate3d(1918px ,0px, 0px);
-        // transition: all 0.6 ease 0s;
-        // width:5757px;
-
         img {
           height: 180px;
           width: 180px;
+
+          &:hover {
+            animation: rotateIn;
+             animation-duration: 2s;
+          }
         }
 
         h4 {
@@ -260,6 +268,7 @@
         }
 
         .event {
+          padding: 20px;
           height: 200px;
           width: 540px;
 
